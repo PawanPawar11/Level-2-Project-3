@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  height: 85%;
+  width: 100%;
+  background-color: #111;
+  display: flex;
+  padding: 5vw 10vw;
+}
+
+#left {
+  height: 100%;
+  width: 45%;
+  background-color: #444;
+  /* background-image: url(https://i1.sndcdn.com/artworks-Tdddwh3jGZBx-0-t500x500.jpg); */
+  background-size: cover;
+  background-position: center;
+}
+
+#right {
+  height: 100%;
+  width: 55%;
+  /* background-color: blue; */
+  padding: 0 3vw;
+}
+
+#right h3 {
+  font-size: 30px;
+}
+
+#all-songs {
+  /* background-color: rgb(190, 80, 155); */
+  height: 85%;
+  margin-top: 30px;
+}
+
+.song-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #fff;
+  padding: 15px 10px;
+}
+
+.song-card:hover {
+  background-color: #333;
+}
+
+.song-card:nth-last-child(1) {
+  border-bottom: 1px solid #fff;
+}
+
+.song-card .part1 {
+  display: flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.song-card img {
+  height: 55px;
+  width: 55px;
+  margin-right: 20px;
+}
+
+.song-card h2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.song-card h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#player {
+  height: 15%;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+#player h3 {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#player h3 i {
+  font-size: 20px;
+}
+
+#player h3:active {
+  scale: 0.9;
+}
